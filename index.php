@@ -18,7 +18,7 @@
 		<div class="flex-container">
 				<div class="yestaday_sity_weather">
 				<ul>
-					<span><?php echo $name;?></span>
+					<span class="city"><?php echo $name;?></span>
 					<li><img src="http://openweathermap.org/img/wn/<?=$apiResult->weather[0]->icon;?>@2x.png"/><?php echo $description;?></li>
 					<li>Now: <?php echo $temp;?> °C</li>
 					<li>Feels: <?php echo $feels_like;?>°C</li>
@@ -30,6 +30,43 @@
 					<li>Sunset: <?php echo $sunset;?>pm <img src="https://img.icons8.com/color/48/000000/evening.png"/></li>
 
 				</ul>
+			</div>
+			<div class="future_forecast">
+				<div class="one_day">
+					<span class="date"><?php echo $one_day; ?></span>
+						<ul class="forecast">
+							<li class="forecast">Now: <?php echo $temp_one;?>℃</li>
+							<li>Feels: <?php echo $temp_feels_one?>℃</li>
+						</ul>
+				</div>
+				<div class="two_day">
+					<span class="date"><?php echo $two_day; ?></span>
+						<ul class="forecast">
+							<li>Now: <?php echo $temp_two;?>℃</li>
+							<li>Feels: <?php echo $temp_feels_two?>℃</li>
+						</ul>
+				</div>
+				<div class="three_day">
+					<span class="date"><?php echo $three_day; ?></span>
+						<ul class="forecast">
+							<li>Now: <?php echo $temp_three;?>℃</li>
+							<li>Feels: <?php echo $temp_feels_three?>℃</li>
+						</ul>
+				</div>
+				<div class="thour_day">
+					<span class="date"><?php echo $thour_day; ?></span>
+						<ul class="forecast">
+							<li>Now: <?php echo $temp_thour;?>℃</li>
+							<li>Feels: <?php echo $temp_feels_thour?>℃</li>
+						</ul>
+				</div>
+				<div class="five_day">
+					<span class="date"><?php echo $five_day; ?></span>
+						<ul class="forecast">
+							<li>Now: <?php echo $temp_five;?>℃</li>
+							<li>Feels: <?php echo $temp_feels_five?>℃</li>
+						</ul>
+				</div>
 			</div>
 		</div>
 	</div>

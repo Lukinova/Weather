@@ -21,9 +21,10 @@ li{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 5px;
 
 }
-span{
+span.city{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	color:#fff5d0;
@@ -32,10 +33,11 @@ span{
 .yestaday_sity_weather{
     display: flex;
     align-items: center;
-	height:auto;
+	height:100%;
     width: 300px;
     background-color: rgba(0,0,0, 0.5);
     border-radius: 12px;
+    margin: 5px;
 }
 .flex-container{
 	display: flex;
@@ -45,4 +47,21 @@ span{
 }
 img{
 	width: 40px;
+}
+.future_forecast{
+	height:100%;
+    width: 300px;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 12px;
+    margin: 5px;
+    text-align: center;
+
+}
+ul.forecast{
+	display: flex;
+}
+span.date{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color:#fff5d0;
 }
